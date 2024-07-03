@@ -1,0 +1,144 @@
+{
+    "employees": [
+        {
+            "id": "1",
+            "name": "Alice Johnson",
+            "profile": "profile1.png",
+            "gender": "Female",
+            "dept": ["HR", "Finance"],
+            "salary": "45000",
+            "startDate": {
+                "day": "15",
+                "month": "June",
+                "year": "2021"
+            },
+            "notes": "Great team player"
+        },
+        {
+            "id": "2",
+            "name": "Bob Smith",
+            "profile": "profile2.png",
+            "gender": "Male",
+            "dept": ["Sales"],
+            "salary": "42000",
+            "startDate": {
+                "day": "20",
+                "month": "April",
+                "year": "2022"
+            },
+            "notes": "Excellent communication skills"
+        },
+        {
+            "id": "3",
+            "name": "Charlie Brown",
+            "profile": "profile3.png",
+            "gender": "Male",
+            "dept": ["Engineer", "HR"],
+            "salary": "47000",
+            "startDate": {
+                "day": "5",
+                "month": "March",
+                "year": "2023"
+            },
+            "notes": "Highly skilled in problem-solving"
+        },
+        {
+            "id": "4",
+            "name": "Daisy Ridley",
+            "profile": "profile4.png",
+            "gender": "Female",
+            "dept": ["Finance"],
+            "salary": "49000",
+            "startDate": {
+                "day": "12",
+                "month": "July",
+                "year": "2020"
+            },
+            "notes": "Great attention to detail"
+        },
+        {
+            "id": "5",
+            "name": "Eve Adams",
+            "profile": "profile1.png",
+            "gender": "Female",
+            "dept": ["Sales", "Engineer"],
+            "salary": "46000",
+            "startDate": {
+                "day": "28",
+                "month": "August",
+                "year": "2021"
+            },
+            "notes": "Creative and innovative"
+        },
+        {
+            "id": "6",
+            "name": "Frank Sinatra",
+            "profile": "profile2.png",
+            "gender": "Male",
+            "dept": ["HR"],
+            "salary": "40000",
+            "startDate": {
+                "day": "10",
+                "month": "October",
+                "year": "2019"
+            },
+            "notes": "Strong leadership qualities"
+        },
+        {
+            "id": "7",
+            "name": "Grace Hopper",
+            "profile": "profile3.png",
+            "gender": "Female",
+            "dept": ["Engineer", "Finance"],
+            "salary": "48000",
+            "startDate": {
+                "day": "18",
+                "month": "july",
+                "year": "2022"
+            },
+            "notes": "Pioneer in computer programming"
+        },
+        {
+            "id": "8",
+            "name": "Henry Ford",
+            "profile": "profile4.png",
+            "gender": "Male",
+            "dept": ["Sales", "HR"],
+            "salary": "43000",
+            "startDate": {
+                "day": "22",
+                "month": "june",
+                "year": "2020"
+            },
+            "notes": "Innovative and entrepreneurial"
+        },
+        {
+            "id": "9",
+            "name": "Ivy Clarke",
+            "profile": "profile1.png",
+            "gender": "Female",
+            "dept": ["Finance", "Sales"],
+            "salary": "45000",
+            "startDate": {
+                "day": "3",
+                "month": "January",
+                "year": "2023"
+            },
+            "notes": "Strong financial acumen"
+        },
+        {
+            "id": "10",
+            "name": "Jack White",
+            "profile": "profile2.png",
+            "gender": "Male",
+            "dept": ["Engineer"],
+            "salary": "44000",
+            "startDate": {
+                "day": "25",
+                "month": "may",
+                "year": "2021"
+            },
+            "notes": "Great problem-solving skills"
+        }
+    ]
+}

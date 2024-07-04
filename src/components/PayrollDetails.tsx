@@ -55,7 +55,7 @@ const PayrollDetails: React.FC = () => {
     const [employees, setEmployees] = useState<Employee[]>([]);
     const [openEditForm, setOpenEditForm] = useState(false);
     const [id, setId] = useState('');
-    const [originalEmployee, setOriginalEmployee] = useState<Employee | null>(null); // Track original employee data
+    const [originalEmployee, setOriginalEmployee] = useState<Employee | null>(null);
     const [name, setName] = useState('');
     const [profile, setProfile] = useState('');
     const [gender, setGender] = useState('');
@@ -92,7 +92,7 @@ const PayrollDetails: React.FC = () => {
         setSalary(data.salary);
         setStartDate(data.startDate);
         setNotes(data.notes);
-        setOriginalEmployee(data); // Store original employee data
+        setOriginalEmployee(data);
     }
 
     const updateData = async () => {

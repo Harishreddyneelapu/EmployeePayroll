@@ -2,6 +2,8 @@ import React from "react";
 import logoEp from '../assets/logo (1).png';
 import { useNavigate, useLocation } from "react-router-dom";
 
+
+
 const Header: React.FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
@@ -40,7 +42,7 @@ const Header: React.FC = () => {
                     </button>
                 </div>
                 <div >
-                    <div className="text-blue-500 text-4xl ml-72 border-b-4">{getHeading()}</div>
+                    <div className="text-blue-500 text-4xl ml-64 border-b-4">{getHeading()}</div>
                 </div>
             </div>
         </header>

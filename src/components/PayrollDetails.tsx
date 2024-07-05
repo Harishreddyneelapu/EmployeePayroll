@@ -93,6 +93,11 @@ const PayrollDetails: React.FC = () => {
         setStartDate(data.startDate);
         setNotes(data.notes);
         setOriginalEmployee(data);
+        for(let i of data.dept){
+            console.log(data.dept.includes(i));
+        }
+        console.log(data.dept);
+        console.log(data.gender);
     }
 
     const updateData = async () => {
@@ -273,10 +278,10 @@ const PayrollDetails: React.FC = () => {
                         <label className="block text-sm font-medium w-1/4">Gender</label>
                         <div className="flex-col w-full ml-6">
                             <div className="flex space-x-4 w-2/3">
-                                {["Male", "Female"].map((gender, index) => (
+                                {["Male", "Female"].map((empGender, index) => (
                                     <div key={index} className="flex items-center space-x-2">
-                                        <input type="radio" {...register("gender")} value={gender} id={`gender-${index}`} checked={gender === gender} onChange={() => setGender(gender)} />
-                                        <label htmlFor={`gender-${index}`} className="text-sm">{gender}</label>
+                                        <input type="radio" {...register("gender")} value={empGender} id={`gender-${index}`} checked={empGender == gender ? true : false} onChange={() => setGender(gender)} />
+                                        <label htmlFor={`gender-${index}`} className="text-sm">{empGender}</label>
                                     </div>
                                 ))}
                             </div>
@@ -287,10 +292,10 @@ const PayrollDetails: React.FC = () => {
                         <label className="block text-sm font-medium w-1/4">Department</label>
                         <div className="flex flex-col w-full ml-6">
                             <div className="flex flex-wrap space-x-4 w-full">
-                                {departments.map((dept, index) => (
+                                {departments.map((empDept, index) => (
                                     <div key={index} className="flex items-center space-x-2">
-                                        <input type="checkbox" {...register("dept")} value={dept} id={`dept-${index}`} checked={dept.includes(dept)} onChange={() => handleDeptChange(dept)} />
-                                        <label htmlFor={`dept-${index}`} className="text-xs">{dept}</label>
+                                        <input type="checkbox" {...register("dept")} value={empDept} id={`dept-${index}`} checked={dept.includes(empDept)} onChange={() => handleDeptChange(empDept)} />
+                                        <label htmlFor={`dept-${index}`} className="text-xs">{empDept}</label>
                                     </div>
                                 ))}
                             </div>

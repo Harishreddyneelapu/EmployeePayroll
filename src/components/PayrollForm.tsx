@@ -7,6 +7,7 @@ import image1 from '../assets/profile1.png';
 import image2 from '../assets/profile2.png';
 import image3 from '../assets/profile3.png';
 import image4 from '../assets/profile4.png';
+import { useNavigate } from 'react-router-dom';
 
 
 const nameRegex = /^[A-Za-z]{3,}$/;
@@ -34,6 +35,7 @@ const generateUniqueId = (): string => {
 };
 
 const EmployeePayrollForm: React.FC = () => {
+    const navigate = useNavigate();
     const { register, handleSubmit, formState: { errors },reset} = useForm<FormValues>({
         resolver: zodResolver(schema),
     });
@@ -48,6 +50,7 @@ const EmployeePayrollForm: React.FC = () => {
             const newEmployee: Employee = await createEmployee(employeeWithId);
             console.log('Employee created:', newEmployee);
             reset();
+            navigate('/dashboard/payrollDetails');
             
         } catch (error) {
             console.error('Error creating employee:', error);
